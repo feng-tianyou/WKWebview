@@ -13,6 +13,10 @@
 		D4052D8E1D23B1F700147357 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4052D8C1D23B1F700147357 /* Main.storyboard */; };
 		D4052D901D23B1F700147357 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4052D8F1D23B1F700147357 /* Assets.xcassets */; };
 		D4052D931D23B1F700147357 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4052D911D23B1F700147357 /* LaunchScreen.storyboard */; };
+		D40CF79E1D24BF7A00AC49F2 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = D40CF79D1D24BF7A00AC49F2 /* test.html */; };
+		D40CF7A11D24C2DF00AC49F2 /* TestUIWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = D40CF7A01D24C2DF00AC49F2 /* TestUIWebView.m */; };
+		D40CF7A41D24C31300AC49F2 /* TestWKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = D40CF7A31D24C31300AC49F2 /* TestWKWebView.m */; };
+		D40CF7A61D24D70100AC49F2 /* The Swift Programming Language 中文版 - v1.2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = D40CF7A51D24D70100AC49F2 /* The Swift Programming Language 中文版 - v1.2.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,12 @@
 		D4052D8F1D23B1F700147357 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4052D921D23B1F700147357 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4052D941D23B1F700147357 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D40CF79D1D24BF7A00AC49F2 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		D40CF79F1D24C2DF00AC49F2 /* TestUIWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestUIWebView.h; sourceTree = "<group>"; };
+		D40CF7A01D24C2DF00AC49F2 /* TestUIWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestUIWebView.m; sourceTree = "<group>"; };
+		D40CF7A21D24C31300AC49F2 /* TestWKWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestWKWebView.h; sourceTree = "<group>"; };
+		D40CF7A31D24C31300AC49F2 /* TestWKWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestWKWebView.m; sourceTree = "<group>"; };
+		D40CF7A51D24D70100AC49F2 /* The Swift Programming Language 中文版 - v1.2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "The Swift Programming Language 中文版 - v1.2.pdf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +77,12 @@
 				D4052D911D23B1F700147357 /* LaunchScreen.storyboard */,
 				D4052D941D23B1F700147357 /* Info.plist */,
 				D4052D831D23B1F700147357 /* Supporting Files */,
+				D40CF79D1D24BF7A00AC49F2 /* test.html */,
+				D40CF7A51D24D70100AC49F2 /* The Swift Programming Language 中文版 - v1.2.pdf */,
+				D40CF79F1D24C2DF00AC49F2 /* TestUIWebView.h */,
+				D40CF7A01D24C2DF00AC49F2 /* TestUIWebView.m */,
+				D40CF7A21D24C31300AC49F2 /* TestWKWebView.h */,
+				D40CF7A31D24C31300AC49F2 /* TestWKWebView.m */,
 			);
 			path = WKWebview;
 			sourceTree = "<group>";
@@ -139,7 +155,9 @@
 			files = (
 				D4052D931D23B1F700147357 /* LaunchScreen.storyboard in Resources */,
 				D4052D901D23B1F700147357 /* Assets.xcassets in Resources */,
+				D40CF79E1D24BF7A00AC49F2 /* test.html in Resources */,
 				D4052D8E1D23B1F700147357 /* Main.storyboard in Resources */,
+				D40CF7A61D24D70100AC49F2 /* The Swift Programming Language 中文版 - v1.2.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +171,8 @@
 				D4052D8B1D23B1F700147357 /* ViewController.m in Sources */,
 				D4052D881D23B1F700147357 /* AppDelegate.m in Sources */,
 				D4052D851D23B1F700147357 /* main.m in Sources */,
+				D40CF7A11D24C2DF00AC49F2 /* TestUIWebView.m in Sources */,
+				D40CF7A41D24C31300AC49F2 /* TestWKWebView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +283,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WKWebview/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.custom.fty.WKWebview;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,6 +295,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WKWebview/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.custom.fty.WKWebview;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -299,6 +321,7 @@
 				D4052D991D23B1F700147357 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
