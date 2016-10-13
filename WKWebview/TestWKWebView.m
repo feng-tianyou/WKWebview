@@ -135,15 +135,18 @@
     
     // 添加4个按钮
     NSArray * WkWeb_Title = @[@"重载",@"后退",@"前进",@"跳转"];
+    UIView *bgView = [[UIView alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height - 45, self.view.bounds.size.width, 45)];
+    bgView.backgroundColor = [UIColor blackColor];
     for (int i= 0 ; i<4; i ++) {
         UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
-        button.frame = CGRectMake(10+i*((self.view.bounds.size.width-50)/4+10), self.view.bounds.size.height - 45, (self.view.bounds.size.width-50)/4, 40);
+        button.frame = CGRectMake(10+i*((self.view.bounds.size.width-50)/4+10), 0, (self.view.bounds.size.width-50)/4, 40);
         [button setTitle:WkWeb_Title[i] forState:UIControlStateNormal];
-        [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         button.tag = i;
         [button addTarget:self action:@selector(clickBtn:) forControlEvents:UIControlEventTouchUpInside];
-        [self.view addSubview:button];
+        [bgView addSubview:button];
     }
+    [self.view addSubview:bgView];
 }
 
 
